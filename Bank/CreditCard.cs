@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Bank
 {
-    public partial class Form1 : Form
+    public partial class CreditCard : Form
     {
-        public Form1()
+        public CreditCard()
         {
             InitializeComponent();
         }
