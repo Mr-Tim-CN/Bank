@@ -60,7 +60,15 @@ namespace Bank
         {
             if(excToRmbBtn.Checked)
             {
-                int excToRmb = int.Parse(excNum.Text);
+                int excToRmb = 0;
+                try
+                {
+                    excToRmb = int.Parse(excNum.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("请输入数字");
+                }
                 string excKey = currencyChoose.Text;
                 int nowexc = 0;         //需要数据库提供数据（当前币种拥有的货币量）（币种：excKey)
                 if(excToRmb>nowexc)
@@ -87,6 +95,10 @@ namespace Bank
                     //更新数据库(减少人民币储蓄以及增加该种货币量)（币种：excKey）
                     //返回上一界面
                 }
+            }
+            else
+            {
+                MessageBox.Show("请选择交易类型");
             }
         }
     }

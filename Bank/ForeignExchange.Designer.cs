@@ -50,10 +50,10 @@
             "美元",
             "日元",
             "港币"});
-            this.currencyChoose.Location = new System.Drawing.Point(42, 21);
+            this.currencyChoose.Location = new System.Drawing.Point(14, 21);
             this.currencyChoose.Margin = new System.Windows.Forms.Padding(2);
             this.currencyChoose.Name = "currencyChoose";
-            this.currencyChoose.Size = new System.Drawing.Size(80, 20);
+            this.currencyChoose.Size = new System.Drawing.Size(108, 20);
             this.currencyChoose.TabIndex = 0;
             this.currencyChoose.Text = "选择一个币种";
             this.currencyChoose.SelectedIndexChanged += new System.EventHandler(this.currencyChoose_SelectedIndexChanged);
