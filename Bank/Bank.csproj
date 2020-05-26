@@ -66,11 +66,9 @@
     </Compile>
     <Compile Include="ForeignExchange.cs">
       <SubType>Form</SubType>
-      <Link>ForeignExchange.cs</Link>
     </Compile>
     <Compile Include="ForeignExchange.Designer.cs">
       <DependentUpon>ForeignExchange.cs</DependentUpon>
-      <Link>ForeignExchange.Designer.cs</Link>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -115,7 +113,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ForeignExchange.resx">
       <DependentUpon>ForeignExchange.cs</DependentUpon>
-      <Link>ForeignExchange.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
