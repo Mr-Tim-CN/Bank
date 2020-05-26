@@ -64,11 +64,11 @@
     <Compile Include="DebitCard.Designer.cs">
       <DependentUpon>DebitCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="C:\Users\何凯\Desktop\ForeignExchange.cs">
+    <Compile Include="ForeignExchange.cs">
       <SubType>Form</SubType>
       <Link>ForeignExchange.cs</Link>
     </Compile>
-    <Compile Include="C:\Users\何凯\Desktop\ForeignExchange.Designer.cs">
+    <Compile Include="ForeignExchange.Designer.cs">
       <DependentUpon>ForeignExchange.cs</DependentUpon>
       <Link>ForeignExchange.Designer.cs</Link>
     </Compile>
@@ -113,7 +113,7 @@
     <EmbeddedResource Include="DebitCard.resx">
       <DependentUpon>DebitCard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="C:\Users\何凯\Desktop\ForeignExchange.resx">
+    <EmbeddedResource Include="ForeignExchange.resx">
       <DependentUpon>ForeignExchange.cs</DependentUpon>
       <Link>ForeignExchange.resx</Link>
     </EmbeddedResource>
