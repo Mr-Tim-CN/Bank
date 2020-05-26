@@ -70,6 +70,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "退出登录";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -79,6 +80,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "修改密码";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // UserCenter
             // 
@@ -98,11 +100,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Label label1;
     }
 }

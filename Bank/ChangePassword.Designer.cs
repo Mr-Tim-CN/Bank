@@ -41,6 +41,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(192, 109);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(100, 25);
             this.textBox2.TabIndex = 8;
             // 
@@ -57,6 +58,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(192, 176);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 13;
             // 
@@ -64,6 +66,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(192, 45);
             this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '*';
             this.textBox4.Size = new System.Drawing.Size(100, 25);
             this.textBox4.TabIndex = 12;
             // 
@@ -93,6 +96,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "确认修改";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ChangePassword
             // 
