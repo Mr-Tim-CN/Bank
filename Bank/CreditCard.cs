@@ -76,49 +76,66 @@ namespace Bank
 
         private void PayBtn_Click(object sender, EventArgs e)
         {
-            double pay = System.Convert.ToDouble(PayTBox.Text);
-            if (pay <= getUsed())
+            //double pay = System.Convert.ToDouble(PayTBox.Text);
+            try
             {
-                UsedCrdTBox.Text = (getUsed() - pay).ToString();   // Update "已用额度" text
-                UsableCrdTBox.Text = (getUsable() + pay).ToString();   // Update "可用额度" text
-                //Update DB
-                string sql3 = "UPDATE creditcardinfo SET 已用额度 = '" + UsedCrdTBox.Text + "', 可用额度 = '" + UsableCrdTBox.Text + "' where 手机号='" + phonenumber + "'";
-                DB.MySqlDataBase db3 = new DB.MySqlDataBase();
-                int ext3 = db3.Excute(sql3);
-                if(ext3 > 0)
+                double pay = System.Convert.ToDouble(PayTBox.Text);
+                if (pay <= getUsed())
                 {
-                    MessageBox.Show("还款成功！");
-                    //CreditCard insert = new CreditCard();
-                    //this.Close();
-                    DrawTbox.Text = "";
-                    PayTBox.Text = "";
+                    UsedCrdTBox.Text = (getUsed() - pay).ToString();   // Update "已用额度" text
+                    UsableCrdTBox.Text = (getUsable() + pay).ToString();   // Update "可用额度" text
+                                                                           //Update DB
+                    string sql3 = "UPDATE creditcardinfo SET 已用额度 = '" + UsedCrdTBox.Text + "', 可用额度 = '" + UsableCrdTBox.Text + "' where 手机号='" + phonenumber + "'";
+                    DB.MySqlDataBase db3 = new DB.MySqlDataBase();
+                    int ext3 = db3.Excute(sql3);
+                    if (ext3 > 0)
+                    {
+                        MessageBox.Show("还款成功！");
+                        //CreditCard insert = new CreditCard();
+                        //this.Close();
+                        DrawTbox.Text = "";
+                        PayTBox.Text = "";
+                    }
                 }
+                else MessageBox.Show("超出需还额度！");
             }
-            else MessageBox.Show("超出需还额度！");
+            catch
+            {
+                MessageBox.Show("还款金额不能为空！");
+            }
+            
         }
 
         private void DrawBtn_Click(object sender, EventArgs e)
         {
-            double draw = System.Convert.ToDouble(DrawTbox.Text);
-            if (draw <= getUsable())
+            try
             {
-                UsedCrdTBox.Text = (getUsed() + draw).ToString();   // Update "已用额度" text
-                UsableCrdTBox.Text = (getUsable() - draw).ToString();   // Update "可用额度" text
-                //Update DB
-                string sql4 = "UPDATE creditcardinfo SET 已用额度 = '" + UsedCrdTBox.Text + "', 可用额度 = '" + UsableCrdTBox.Text + "' where 手机号='" + phonenumber + "'";
-                DB.MySqlDataBase db4 = new DB.MySqlDataBase();
-                int ext4 = db4.Excute(sql4);
-                if (ext4 > 0)
+                double draw = System.Convert.ToDouble(DrawTbox.Text);
+                if (draw <= getUsable())
                 {
-                    MessageBox.Show("支取成功！");
-                    //CreditCard insert = new CreditCard();
-                    //this.Close();
-                    DrawTbox.Text = "";
-                    PayTBox.Text = "";
-                }
+                    UsedCrdTBox.Text = (getUsed() + draw).ToString();   // Update "已用额度" text
+                    UsableCrdTBox.Text = (getUsable() - draw).ToString();   // Update "可用额度" text
+                                                                            //Update DB
+                    string sql4 = "UPDATE creditcardinfo SET 已用额度 = '" + UsedCrdTBox.Text + "', 可用额度 = '" + UsableCrdTBox.Text + "' where 手机号='" + phonenumber + "'";
+                    DB.MySqlDataBase db4 = new DB.MySqlDataBase();
+                    int ext4 = db4.Excute(sql4);
+                    if (ext4 > 0)
+                    {
+                        MessageBox.Show("支取成功！");
+                        //CreditCard insert = new CreditCard();
+                        //this.Close();
+                        DrawTbox.Text = "";
+                        PayTBox.Text = "";
+                    }
 
+                }
+                else MessageBox.Show("超出可用额度！");
             }
-            else MessageBox.Show("超出可用额度！");
+            catch
+            {
+                MessageBox.Show("支取金额不能为空！");
+            }
+            
         }
     }
 }
