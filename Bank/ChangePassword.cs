@@ -50,7 +50,7 @@ namespace Bank
                 }
                 else if(cfpwd != newpwd)
                 {
-                    MessageBox.Show("确认密码错误");
+                    MessageBox.Show("两次密码输入不一致");
                 }
                 else
                 {

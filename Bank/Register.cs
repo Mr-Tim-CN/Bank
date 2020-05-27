@@ -30,6 +30,8 @@ namespace Bank
                 string password = textBox2.Text.Trim();
                 string cfpwd = textBox3.Text.Trim();
                 string sql = "INSERT INTO userinfo VALUES('" + name + "','" + phonenumber + "','" + password + "')";
+                string sql2 = "INSERT INTO creditcardinfo VALUES('" + phonenumber + "','3000','0', '3000')";
+                string sql3 = "INSERT INTO debitcardinfo VALUES('" + phonenumber + "', '1000')";
                 if (cfpwd == password)
                 {
                     
@@ -37,10 +39,12 @@ namespace Bank
                     {
                         DB.MySqlDataBase mdb = new DB.MySqlDataBase();
                         int ext = mdb.Excute(sql);
+                        int ext2 = mdb.Excute(sql2);
+                        int ext3 = mdb.Excute(sql3);
                         if (ext > 0)
                         {
                             MessageBox.Show("注册成功！");
-                            Login insert = new Login();
+                            Welcome insert = new Welcome();
                             insert.Show();
                             this.Hide();
                         }
@@ -54,7 +58,7 @@ namespace Bank
                 }
                 else
                 {
-                    MessageBox.Show("确认密码错误", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("两次密码输入不一致", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             

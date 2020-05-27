@@ -106,8 +106,6 @@
       <DependentUpon>CreditCard.cs</DependentUpon>
     </Compile>
     <Compile Include="DB\MySqlDataBase.cs" />
-    <Compile Include="DB\MySqlDB.cs" />
-    <Compile Include="DB\StringUtils.cs" />
     <Compile Include="DebitCard.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -35,5 +35,17 @@ namespace Bank
             ChangePassword insert = new ChangePassword(f2);
             insert.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DebitCard insert = new DebitCard();
+            insert.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CreditCard insert = new CreditCard();
+            insert.Show();
+        }
     }
 }
