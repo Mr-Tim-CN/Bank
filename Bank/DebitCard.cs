@@ -16,5 +16,12 @@ namespace Bank
         {
             InitializeComponent();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TimeDeposit insert = new TimeDeposit();
+            insert.Show();
+            this.Hide();
+        }
     }
 }

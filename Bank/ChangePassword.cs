@@ -4,17 +4,71 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Math.EC;
 
 namespace Bank
 {
     public partial class ChangePassword : Form
     {
-        public ChangePassword()
+        Form f2;
+        public ChangePassword(Form f)
         {
             InitializeComponent();
+            f2 = f;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string oldpwd = textBox4.Text.Trim();
+            string newpwd = textBox2.Text.Trim();
+            string cfpwd = textBox1.Text.Trim();
+            
+            if (textBox1.Text == "" || textBox2.Text == "" || textBox4.Text == "")
+            {
+                MessageBox.Show("输入不完整，请检查", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                string phonenumber = Login.Getphonenum();
+                string sql = "Select * from userinfo where 手机号='" + phonenumber + "'";
+                DB.MySqlDataBase mdb = new DB.MySqlDataBase();
+                MySqlDataReader rd = mdb.read(sql);
+                rd.Read();
+                string pwd = rd["密码"].ToString();
+                if(oldpwd != pwd)
+                {
+                    MessageBox.Show("旧密码输入错误");
+                }
+                else if(newpwd == oldpwd)
+                {
+                    MessageBox.Show("新密码不能和旧密码相同");
+                }
+                else if(cfpwd != newpwd)
+                {
+                    MessageBox.Show("两次密码输入不一致");
+                }
+                else
+                {
+                    string sql2 = "UPDATE userinfo SET 密码 = '" + newpwd + "' where 手机号='" + phonenumber + "'";
+                    DB.MySqlDataBase db = new DB.MySqlDataBase();
+                    int ext = db.Excute(sql2);
+                    if(ext > 0)
+                    {
+                        MessageBox.Show("修改成功！");
+                        Login insert = new Login();
+                        insert.Show();
+                        this.Hide();
+                        
+                        f2.Hide();      //修改密码后隐藏原来的用户中心界面
+                    }
+                }
+            }
+
         }
     }
 }
