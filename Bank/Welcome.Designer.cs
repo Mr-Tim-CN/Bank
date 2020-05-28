@@ -40,6 +40,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(97, 191);
             this.button1.Name = "button1";
@@ -51,8 +52,9 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button2.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(337, 191);
+            this.button2.Location = new System.Drawing.Point(332, 191);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 55);
             this.button2.TabIndex = 2;
@@ -62,29 +64,32 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(319, 321);
+            this.label2.Location = new System.Drawing.Point(344, 323);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "现在时间：";
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(407, 321);
+            this.label3.Location = new System.Drawing.Point(432, 323);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 15);
+            this.label3.Size = new System.Drawing.Size(115, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "yyyy/mm/dd hh:mm";
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("楷体", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(121, 75);
+            this.label4.Location = new System.Drawing.Point(153, 77);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(321, 33);
+            this.label4.Size = new System.Drawing.Size(264, 27);
             this.label4.TabIndex = 5;
             this.label4.Text = "欢迎来到模拟银行！";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,8 +102,7 @@
             // 
             // Welcome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(559, 345);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -106,7 +110,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("等线", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
