@@ -15,11 +15,11 @@ namespace Bank
 {
     public partial class ChangePassword : Form
     {
-        Form f2;
-        public ChangePassword(Form f)
+        
+        public ChangePassword()
         {
             InitializeComponent();
-            f2 = f;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,9 +62,9 @@ namespace Bank
                         MessageBox.Show("修改成功！");
                         Login insert = new Login();
                         insert.Show();
-                        this.Hide();
+                        this.Close();
                         
-                        f2.Hide();      //修改密码后隐藏原来的用户中心界面
+                        
                     }
                 }
             }
