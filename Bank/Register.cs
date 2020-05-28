@@ -46,13 +46,14 @@ namespace Bank
                             MessageBox.Show("注册成功！");
                             Welcome insert = new Welcome();
                             insert.Show();
-                            this.Hide();
+                            //this.Hide();
+                            this.Close();
                         }
                     }
                    
                     catch
                     {
-                        MessageBox.Show("手机号已存在");
+                        MessageBox.Show("该手机号已被注册");
                     }
                     
                 }
