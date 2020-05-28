@@ -13,12 +13,12 @@ namespace Bank
 {
     public partial class UserCenter : Form
     {
-        public static UserCenter f2;
+        
         public UserCenter()
         {
             InitializeComponent();
             label1.Text = "你好，" + Login.Getname();
-            f2 = this;
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -27,13 +27,14 @@ namespace Bank
             //Application.Exit();
             Welcome insert = new Welcome();
             insert.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            ChangePassword insert = new ChangePassword(f2);
+            ChangePassword insert = new ChangePassword();
             insert.Show();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
