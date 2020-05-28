@@ -164,7 +164,9 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Register";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "注册";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
