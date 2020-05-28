@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserCenter));
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -38,17 +39,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(92, 42);
+            this.label1.Font = new System.Drawing.Font("楷体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(38, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 15);
+            this.label1.Size = new System.Drawing.Size(154, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "你好，$姓名$";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(82, 106);
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(117, 107);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 23);
+            this.button1.Size = new System.Drawing.Size(188, 43);
             this.button1.TabIndex = 1;
             this.button1.Text = "查看储蓄卡";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,9 +61,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(82, 152);
+            this.button2.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button2.Location = new System.Drawing.Point(367, 107);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 23);
+            this.button2.Size = new System.Drawing.Size(188, 43);
             this.button2.TabIndex = 2;
             this.button2.Text = "查看信用卡";
             this.button2.UseVisualStyleBackColor = true;
@@ -66,9 +73,11 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(82, 237);
+            this.button3.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.Location = new System.Drawing.Point(117, 187);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 23);
+            this.button3.Size = new System.Drawing.Size(188, 43);
             this.button3.TabIndex = 3;
             this.button3.Text = "退出登录";
             this.button3.UseVisualStyleBackColor = true;
@@ -76,9 +85,11 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(82, 195);
+            this.button4.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.Location = new System.Drawing.Point(367, 187);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 23);
+            this.button4.Size = new System.Drawing.Size(188, 43);
             this.button4.TabIndex = 4;
             this.button4.Text = "修改密码";
             this.button4.UseVisualStyleBackColor = true;
@@ -86,16 +97,24 @@
             // 
             // UserCenter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 289);
+            this.ClientSize = new System.Drawing.Size(608, 267);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("宋体", 18F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UserCenter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "个人中心";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
