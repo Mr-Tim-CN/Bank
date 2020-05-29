@@ -85,7 +85,21 @@ namespace Bank
         {
             //UsedCrdTBox.Text = getUsed().ToString();
         }
-        
+
+        double Balance;
+        public double getBalance()
+        {
+            string sql1 = "Select * from debitcardinfo where 手机号='" + phonenumber + "'";
+            DB.MySqlDataBase mdb = new DB.MySqlDataBase();
+            MySqlDataReader rd = mdb.read(sql1);
+            rd.Read();
+            string a = rd["活期存款余额"].ToString();
+            rd.Close();
+            Balance = double.Parse(a);
+
+            return Balance;
+        }
+
 
         private void PayBtn_Click(object sender, EventArgs e)
         {
@@ -93,24 +107,34 @@ namespace Bank
             try
             {
                 double pay = System.Convert.ToDouble(PayTBox.Text);
-                if (pay <= getUsed())
+
+                if(pay > getBalance())
                 {
-                    UsedCrdTBox.Text = (getUsed() - pay).ToString();   // Update "已用额度" text
-                    UsableCrdTBox.Text = (getUsable() + pay).ToString();   // Update "可用额度" text
-                                                                           //Update DB
-                    string sql3 = "UPDATE creditcardinfo SET 已用额度 = '" + UsedCrdTBox.Text + "', 可用额度 = '" + UsableCrdTBox.Text + "' where 手机号='" + phonenumber + "'";
-                    DB.MySqlDataBase db3 = new DB.MySqlDataBase();
-                    int ext3 = db3.Excute(sql3);
-                    if (ext3 > 0)
-                    {
-                        MessageBox.Show("还款成功！");
-                        //CreditCard insert = new CreditCard();
-                        //this.Close();
-                        DrawTbox.Text = "";
-                        PayTBox.Text = "";
-                    }
+                    MessageBox.Show("储蓄卡余额不足");
                 }
-                else MessageBox.Show("超出需还额度！");
+                else
+                {
+                    if (pay <= getUsed())
+                    {
+                        UsedCrdTBox.Text = (getUsed() - pay).ToString();   // Update "已用额度" text
+                        UsableCrdTBox.Text = (getUsable() + pay).ToString();   // Update "可用额度" text
+                                                                               //Update DB
+                        string sql3 = "UPDATE creditcardinfo SET 已用额度 = '" + UsedCrdTBox.Text + "', 可用额度 = '" + UsableCrdTBox.Text + "' where 手机号='" + phonenumber + "'";
+                        DB.MySqlDataBase db3 = new DB.MySqlDataBase();
+                        int ext3 = db3.Excute(sql3);
+                        if (ext3 > 0)
+                        {
+                            MessageBox.Show("还款成功！");
+                            //CreditCard insert = new CreditCard();
+                            //this.Close();
+                            DrawTbox.Text = "";
+                            PayTBox.Text = "";
+                        }
+                    }
+                    else MessageBox.Show("超出需还额度！");
+                }
+
+                
             }
             catch
             {
