@@ -64,7 +64,6 @@
             this.label4.Size = new System.Drawing.Size(230, 31);
             this.label4.TabIndex = 8;
             this.label4.Text = "你的活期账户余额：";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox1
             // 
@@ -78,6 +77,7 @@
             this.textBox1.TabIndex = 9;
             this.textBox1.TabStop = false;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -90,7 +90,6 @@
             this.label2.Size = new System.Drawing.Size(62, 31);
             this.label2.TabIndex = 10;
             this.label2.Text = "存款";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox2
             // 

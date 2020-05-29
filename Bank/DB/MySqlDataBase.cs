@@ -10,6 +10,7 @@ namespace Bank.DB
 {
     class MySqlDataBase
     {
+        [Obsolete]
         private static string _DBConnString = System.Configuration.ConfigurationSettings.AppSettings["DBConnectionString"];
 
         public static string DBConnString

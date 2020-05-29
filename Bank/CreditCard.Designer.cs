@@ -48,7 +48,11 @@
             // 
             this.UsableCrdTBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UsableCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
-            this.UsableCrdTBox.Location = new System.Drawing.Point(179, 123);
+
+            
+
+            this.UsableCrdTBox.Location = new System.Drawing.Point(540, 122);
+
             this.UsableCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsableCrdTBox.Name = "UsableCrdTBox";
             this.UsableCrdTBox.ReadOnly = true;
@@ -74,7 +78,11 @@
             // 
             this.UsedCrdTBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UsedCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
+
             this.UsedCrdTBox.Location = new System.Drawing.Point(540, 123);
+
+            this.UsedCrdTBox.Location = new System.Drawing.Point(179, 123);
+
             this.UsedCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsedCrdTBox.Name = "UsedCrdTBox";
             this.UsedCrdTBox.ReadOnly = true;
