@@ -48,8 +48,8 @@
             // 
             this.UsableCrdTBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UsableCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
-            this.UsableCrdTBox.Location = new System.Drawing.Point(179, 123);
-            this.UsableCrdTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UsableCrdTBox.Location = new System.Drawing.Point(540, 122);
+            this.UsableCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsableCrdTBox.Name = "UsableCrdTBox";
             this.UsableCrdTBox.ReadOnly = true;
             this.UsableCrdTBox.Size = new System.Drawing.Size(148, 35);
@@ -74,8 +74,8 @@
             // 
             this.UsedCrdTBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UsedCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
-            this.UsedCrdTBox.Location = new System.Drawing.Point(540, 123);
-            this.UsedCrdTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UsedCrdTBox.Location = new System.Drawing.Point(179, 123);
+            this.UsedCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsedCrdTBox.Name = "UsedCrdTBox";
             this.UsedCrdTBox.ReadOnly = true;
             this.UsedCrdTBox.Size = new System.Drawing.Size(148, 35);
@@ -89,7 +89,7 @@
             this.DefaultCrdTBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DefaultCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
             this.DefaultCrdTBox.Location = new System.Drawing.Point(540, 46);
-            this.DefaultCrdTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DefaultCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.DefaultCrdTBox.Name = "DefaultCrdTBox";
             this.DefaultCrdTBox.ReadOnly = true;
             this.DefaultCrdTBox.Size = new System.Drawing.Size(148, 35);
@@ -126,7 +126,7 @@
             // 
             this.DrawTbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.DrawTbox.Location = new System.Drawing.Point(287, 204);
-            this.DrawTbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DrawTbox.Margin = new System.Windows.Forms.Padding(4);
             this.DrawTbox.Name = "DrawTbox";
             this.DrawTbox.Size = new System.Drawing.Size(148, 35);
             this.DrawTbox.TabIndex = 0;
@@ -148,7 +148,7 @@
             this.PayBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.PayBtn.Font = new System.Drawing.Font("微软雅黑", 18F);
             this.PayBtn.Location = new System.Drawing.Point(519, 275);
-            this.PayBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PayBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PayBtn.Name = "PayBtn";
             this.PayBtn.Size = new System.Drawing.Size(138, 42);
             this.PayBtn.TabIndex = 3;
@@ -161,7 +161,7 @@
             this.DrawBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.DrawBtn.Font = new System.Drawing.Font("微软雅黑", 18F);
             this.DrawBtn.Location = new System.Drawing.Point(519, 199);
-            this.DrawBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DrawBtn.Margin = new System.Windows.Forms.Padding(4);
             this.DrawBtn.Name = "DrawBtn";
             this.DrawBtn.Size = new System.Drawing.Size(138, 42);
             this.DrawBtn.TabIndex = 1;
@@ -173,7 +173,7 @@
             // 
             this.PayTBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.PayTBox.Location = new System.Drawing.Point(287, 279);
-            this.PayTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PayTBox.Margin = new System.Windows.Forms.Padding(4);
             this.PayTBox.Name = "PayTBox";
             this.PayTBox.Size = new System.Drawing.Size(148, 35);
             this.PayTBox.TabIndex = 2;
@@ -223,7 +223,7 @@
             this.Font = new System.Drawing.Font("宋体", 18F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CreditCard";
