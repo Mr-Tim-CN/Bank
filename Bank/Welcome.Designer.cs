@@ -67,9 +67,9 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("等线", 12F);
-            this.label2.Location = new System.Drawing.Point(301, 309);
+            this.label2.Location = new System.Drawing.Point(301, 307);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 17);
+            this.label2.Size = new System.Drawing.Size(110, 21);
             this.label2.TabIndex = 3;
             this.label2.Text = "现在时间：";
             // 
@@ -80,7 +80,7 @@
             this.label3.Font = new System.Drawing.Font("等线", 12F);
             this.label3.Location = new System.Drawing.Point(395, 307);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 17);
+            this.label3.Size = new System.Drawing.Size(183, 21);
             this.label3.TabIndex = 4;
             this.label3.Text = "yyyy/mm/dd hh:mm";
             // 
@@ -91,7 +91,7 @@
             this.label4.Font = new System.Drawing.Font("楷体", 25F);
             this.label4.Location = new System.Drawing.Point(131, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(321, 34);
+            this.label4.Size = new System.Drawing.Size(396, 42);
             this.label4.TabIndex = 5;
             this.label4.Text = "欢迎来到模拟银行！";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
