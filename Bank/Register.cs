@@ -46,7 +46,7 @@ namespace Bank
                 string cfpwd = textBox3.Text;
                 string sql = "INSERT INTO userinfo VALUES('" + name + "','" + phonenumber + "','" + BCrypt.Net.BCrypt.HashPassword(password) + "')";
                 string sql2 = "INSERT INTO creditcardinfo VALUES('" + phonenumber + "','3000','0', '3000')";
-                string sql3 = "INSERT INTO debitcardinfo VALUES('" + phonenumber + "', '1000')";
+                string sql3 = "INSERT INTO debitcardinfo VALUES('" + phonenumber + "', '0')";
                 string sql4 = "INSERT INTO foreignexchange VALUES('" + phonenumber + "','美元','0')";
                 string sql5 = "INSERT INTO foreignexchange VALUES('" + phonenumber + "','日元','0')";
                 string sql6 = "INSERT INTO foreignexchange VALUES('" + phonenumber + "','港币','0')";
