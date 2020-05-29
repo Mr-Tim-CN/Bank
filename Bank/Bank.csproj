@@ -204,5 +204,8 @@
   <ItemGroup>
     <None Include="pic\bank.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
