@@ -144,7 +144,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label1.Location = new System.Drawing.Point(325, 102);
+            this.label1.Location = new System.Drawing.Point(304, 102);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 31);
@@ -155,7 +155,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label4.Location = new System.Drawing.Point(325, 168);
+            this.label4.Location = new System.Drawing.Point(304, 168);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 31);
@@ -166,7 +166,7 @@
             // 
             this.buyPrice.AutoSize = true;
             this.buyPrice.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.buyPrice.Location = new System.Drawing.Point(423, 102);
+            this.buyPrice.Location = new System.Drawing.Point(402, 102);
             this.buyPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.buyPrice.Name = "buyPrice";
             this.buyPrice.Size = new System.Drawing.Size(21, 31);
@@ -177,7 +177,7 @@
             // 
             this.sellPrice.AutoSize = true;
             this.sellPrice.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.sellPrice.Location = new System.Drawing.Point(423, 168);
+            this.sellPrice.Location = new System.Drawing.Point(402, 168);
             this.sellPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.sellPrice.Name = "sellPrice";
             this.sellPrice.Size = new System.Drawing.Size(21, 31);
