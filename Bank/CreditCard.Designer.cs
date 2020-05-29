@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreditCard));
             this.UsableCrdTBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.UsedCrdTBox = new System.Windows.Forms.TextBox();
@@ -45,7 +46,7 @@
             // 
             // UsableCrdTBox
             // 
-            this.UsableCrdTBox.Location = new System.Drawing.Point(323, 280);
+            this.UsableCrdTBox.Location = new System.Drawing.Point(284, 284);
             this.UsableCrdTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UsableCrdTBox.Name = "UsableCrdTBox";
             this.UsableCrdTBox.ReadOnly = true;
@@ -56,16 +57,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(161, 286);
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.label4.Location = new System.Drawing.Point(122, 290);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 24);
+            this.label4.Size = new System.Drawing.Size(110, 31);
             this.label4.TabIndex = 18;
             this.label4.Text = "可用额度";
             // 
             // UsedCrdTBox
             // 
-            this.UsedCrdTBox.Location = new System.Drawing.Point(323, 186);
+            this.UsedCrdTBox.Location = new System.Drawing.Point(284, 190);
             this.UsedCrdTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UsedCrdTBox.Name = "UsedCrdTBox";
             this.UsedCrdTBox.ReadOnly = true;
@@ -75,7 +77,7 @@
             // 
             // DefaultCrdTBox
             // 
-            this.DefaultCrdTBox.Location = new System.Drawing.Point(323, 100);
+            this.DefaultCrdTBox.Location = new System.Drawing.Point(284, 104);
             this.DefaultCrdTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DefaultCrdTBox.Name = "DefaultCrdTBox";
             this.DefaultCrdTBox.ReadOnly = true;
@@ -86,26 +88,28 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(161, 192);
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.label5.Location = new System.Drawing.Point(122, 196);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 24);
+            this.label5.Size = new System.Drawing.Size(110, 31);
             this.label5.TabIndex = 15;
             this.label5.Text = "已用额度";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(161, 106);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.label1.Location = new System.Drawing.Point(122, 110);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 24);
+            this.label1.Size = new System.Drawing.Size(110, 31);
             this.label1.TabIndex = 14;
             this.label1.Text = "信用额度";
             // 
             // DrawTbox
             // 
-            this.DrawTbox.Location = new System.Drawing.Point(206, 382);
+            this.DrawTbox.Location = new System.Drawing.Point(702, 192);
             this.DrawTbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DrawTbox.Name = "DrawTbox";
             this.DrawTbox.Size = new System.Drawing.Size(148, 35);
@@ -114,16 +118,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(42, 388);
+            this.label2.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.label2.Location = new System.Drawing.Point(538, 198);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
+            this.label2.Size = new System.Drawing.Size(110, 31);
             this.label2.TabIndex = 20;
             this.label2.Text = "支取金额";
             // 
             // PayBtn
             // 
-            this.PayBtn.Location = new System.Drawing.Point(438, 466);
+            this.PayBtn.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.PayBtn.Location = new System.Drawing.Point(934, 249);
             this.PayBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PayBtn.Name = "PayBtn";
             this.PayBtn.Size = new System.Drawing.Size(138, 42);
@@ -134,7 +140,8 @@
             // 
             // DrawBtn
             // 
-            this.DrawBtn.Location = new System.Drawing.Point(438, 380);
+            this.DrawBtn.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.DrawBtn.Location = new System.Drawing.Point(934, 190);
             this.DrawBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DrawBtn.Name = "DrawBtn";
             this.DrawBtn.Size = new System.Drawing.Size(138, 42);
@@ -145,7 +152,7 @@
             // 
             // PayTBox
             // 
-            this.PayTBox.Location = new System.Drawing.Point(206, 468);
+            this.PayTBox.Location = new System.Drawing.Point(702, 251);
             this.PayTBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PayTBox.Name = "PayTBox";
             this.PayTBox.Size = new System.Drawing.Size(148, 35);
@@ -154,28 +161,31 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 482);
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.label3.Location = new System.Drawing.Point(514, 265);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(154, 24);
+            this.label3.Size = new System.Drawing.Size(158, 31);
             this.label3.TabIndex = 23;
             this.label3.Text = "从储蓄卡还款";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(220, 28);
+            this.label6.Font = new System.Drawing.Font("楷体", 25F);
+            this.label6.Location = new System.Drawing.Point(42, 35);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 24);
+            this.label6.Size = new System.Drawing.Size(219, 34);
             this.label6.TabIndex = 26;
             this.label6.Text = "你好，$姓名$";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CreditCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 573);
+            this.ClientSize = new System.Drawing.Size(1182, 355);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.DrawBtn);
             this.Controls.Add(this.PayTBox);
@@ -190,9 +200,14 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("宋体", 18F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "CreditCard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "信用卡";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

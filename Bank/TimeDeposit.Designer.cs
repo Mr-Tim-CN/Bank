@@ -83,7 +83,7 @@
             // 
             this.buyBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buyBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buyBtn.Location = new System.Drawing.Point(301, 564);
+            this.buyBtn.Location = new System.Drawing.Point(488, 546);
             this.buyBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buyBtn.Name = "buyBtn";
             this.buyBtn.Size = new System.Drawing.Size(154, 50);
@@ -185,7 +185,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 645);
+            this.ClientSize = new System.Drawing.Size(1116, 627);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

@@ -185,7 +185,7 @@
             this.Controls.Add(this.currencyChoose);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ForeignExchange";
-            this.Text = "外汇兑换";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
