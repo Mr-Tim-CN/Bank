@@ -147,6 +147,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ChangePassword";
+            this.ShowInTaskbar = false;
             this.Text = "密码修改";
             this.TopMost = true;
             this.ResumeLayout(false);

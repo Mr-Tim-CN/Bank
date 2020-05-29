@@ -41,8 +41,8 @@
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(97, 191);
+            this.button1.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.button1.Location = new System.Drawing.Point(97, 184);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 55);
             this.button1.TabIndex = 1;
@@ -53,8 +53,8 @@
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(332, 191);
+            this.button2.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.button2.Location = new System.Drawing.Point(332, 184);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 55);
             this.button2.TabIndex = 2;
@@ -66,9 +66,10 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(344, 323);
+            this.label2.Font = new System.Drawing.Font("等线", 12F);
+            this.label2.Location = new System.Drawing.Point(301, 309);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "现在时间：";
             // 
@@ -76,9 +77,10 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(417, 323);
+            this.label3.Font = new System.Drawing.Font("等线", 12F);
+            this.label3.Location = new System.Drawing.Point(395, 307);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 13);
+            this.label3.Size = new System.Drawing.Size(148, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "yyyy/mm/dd hh:mm";
             // 
@@ -86,10 +88,10 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("楷体", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(153, 77);
+            this.label4.Font = new System.Drawing.Font("楷体", 25F);
+            this.label4.Location = new System.Drawing.Point(131, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(264, 27);
+            this.label4.Size = new System.Drawing.Size(321, 34);
             this.label4.TabIndex = 5;
             this.label4.Text = "欢迎来到模拟银行！";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

@@ -38,12 +38,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +60,7 @@
             "2年/年利率2.4%",
             "3年/年利率3%",
             "5年/年利率3%"});
-            this.planChoose.Location = new System.Drawing.Point(204, 396);
+            this.planChoose.Location = new System.Drawing.Point(378, 384);
             this.planChoose.Margin = new System.Windows.Forms.Padding(4);
             this.planChoose.Name = "planChoose";
             this.planChoose.Size = new System.Drawing.Size(218, 148);
@@ -69,7 +69,7 @@
             // buyNum
             // 
             this.buyNum.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buyNum.Location = new System.Drawing.Point(706, 392);
+            this.buyNum.Location = new System.Drawing.Point(718, 384);
             this.buyNum.Margin = new System.Windows.Forms.Padding(4);
             this.buyNum.Name = "buyNum";
             this.buyNum.Size = new System.Drawing.Size(148, 35);
@@ -80,7 +80,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label1.Location = new System.Drawing.Point(539, 392);
+            this.label1.Location = new System.Drawing.Point(738, 312);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 31);
@@ -92,10 +92,10 @@
             this.buyBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.buyBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buyBtn.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.buyBtn.Location = new System.Drawing.Point(558, 470);
+            this.buyBtn.Location = new System.Drawing.Point(753, 459);
             this.buyBtn.Margin = new System.Windows.Forms.Padding(4);
             this.buyBtn.Name = "buyBtn";
-            this.buyBtn.Size = new System.Drawing.Size(276, 61);
+            this.buyBtn.Size = new System.Drawing.Size(80, 80);
             this.buyBtn.TabIndex = 2;
             this.buyBtn.Text = "确认购买";
             this.buyBtn.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label2.Location = new System.Drawing.Point(525, 316);
+            this.label2.Location = new System.Drawing.Point(89, 409);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 31);
@@ -117,7 +117,7 @@
             // 
             this.cardBalance.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cardBalance.Cursor = System.Windows.Forms.Cursors.No;
-            this.cardBalance.Location = new System.Drawing.Point(706, 316);
+            this.cardBalance.Location = new System.Drawing.Point(84, 471);
             this.cardBalance.Margin = new System.Windows.Forms.Padding(4);
             this.cardBalance.Name = "cardBalance";
             this.cardBalance.ReadOnly = true;
@@ -131,7 +131,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label3.Location = new System.Drawing.Point(52, 451);
+            this.label3.Location = new System.Drawing.Point(432, 312);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 31);
@@ -143,7 +143,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("楷体", 25F);
-            this.label4.Location = new System.Drawing.Point(35, 111);
+            this.label4.Location = new System.Drawing.Point(33, 110);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(253, 34);
@@ -152,6 +152,10 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -159,52 +163,24 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(322, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(324, 31);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(579, 186);
+            this.dataGridView1.Size = new System.Drawing.Size(610, 186);
+            this.dataGridView1.StandardTab = true;
             this.dataGridView1.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "额度";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "存期";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 83;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column3.HeaderText = "购买日期";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 131;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column4.HeaderText = "到期时间";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 131;
             // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("楷体", 25F);
-            this.label6.Location = new System.Drawing.Point(131, 309);
+            this.label6.Location = new System.Drawing.Point(49, 322);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(219, 34);
@@ -216,18 +192,58 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(-172, 230);
+            this.label5.Location = new System.Drawing.Point(-155, 230);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(1354, 24);
             this.label5.TabIndex = 28;
             this.label5.Text = "_________________________________________________________________________________" +
     "_______________________________";
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column1.FillWeight = 1F;
+            this.Column1.HeaderText = "额度";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 130;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column2.FillWeight = 1F;
+            this.Column2.HeaderText = "存期";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 215;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column3.FillWeight = 1F;
+            this.Column3.HeaderText = "购买日期";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 131;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Column4.FillWeight = 1F;
+            this.Column4.HeaderText = "到期时间";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 131;
+            // 
             // TimeDeposit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 578);
+            this.ClientSize = new System.Drawing.Size(975, 578);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
@@ -266,11 +282,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox planChoose;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
     }
 }
