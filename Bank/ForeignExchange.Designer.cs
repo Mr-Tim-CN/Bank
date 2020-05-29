@@ -220,6 +220,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ForeignExchange";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " 外汇兑换";
             this.TopMost = true;
             this.ResumeLayout(false);
