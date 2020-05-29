@@ -56,9 +56,13 @@ namespace Bank
                         UserCenter insert = new UserCenter();
                         insert.Show();          //显示这个窗体
                         this.Hide();            //隐藏这个窗体
+
+                        //更新BCrypt加密
+                        string sql1 = "UPDATE `userinfo` SET `密码` = '" + BCrypt.Net.BCrypt.HashPassword(password) + "' WHERE `手机号` = '" + phonenumber + "'";
+                        mdb.read(sql1);
+
                         rd.Close();
 
-                        string sql1 = "UPDATE `userinfo` SET `密码` = '"+ BCrypt.Net.BCrypt.HashPassword(password) +"' WHERE `手机号` = '"+ phonenumber + "'";
                     }
                     else
                     {
