@@ -61,8 +61,21 @@ namespace Bank
 
             return usableCrd;   
         }
-  
-        
+        protected override void WndProc(ref Message m)
+        {
+            const int WM_SYSCOMMAND = 0x0112;
+            const int SC_CLOSE = 0xF060;
+
+            if (m.Msg == WM_SYSCOMMAND && ((int)m.WParam == SC_CLOSE))
+            {
+                UserCenter.user.Show();
+                this.Close();
+
+                return;
+            }
+            base.WndProc(ref m);
+        }
+
         private void UsableCrd_TextChanged(object sender, EventArgs e)
         {
             //UsableCrdTBox.Text = getUsable().ToString();
