@@ -119,9 +119,14 @@ namespace Bank
                         UsedCrdTBox.Text = (getUsed() - pay).ToString();   // Update "已用额度" text
                         UsableCrdTBox.Text = (getUsable() + pay).ToString();   // Update "可用额度" text
                                                                                //Update DB
+
+                        double newBalance = getBalance() - pay;                //使用储蓄卡还款信用卡后，储蓄卡的余额
+
                         string sql3 = "UPDATE creditcardinfo SET 已用额度 = '" + UsedCrdTBox.Text + "', 可用额度 = '" + UsableCrdTBox.Text + "' where 手机号='" + phonenumber + "'";
+                        string sql4 = "UPDATE debitcardinfo SET 活期存款余额 = '" + newBalance + "' where 手机号='" + phonenumber + "'";
                         DB.MySqlDataBase db3 = new DB.MySqlDataBase();
                         int ext3 = db3.Excute(sql3);
+                        int ext4 = db3.Excute(sql4);
                         if (ext3 > 0)
                         {
                             MessageBox.Show("还款成功！");
