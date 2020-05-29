@@ -17,8 +17,8 @@ namespace Bank
             InitializeComponent();
         }
 
-        double Balance;
-        public double getBalance()
+        decimal Balance;
+        public decimal getBalance()
         {
             return Balance;
         }
@@ -42,16 +42,16 @@ namespace Bank
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double depositacc = System.Convert.ToDouble(textBox3.Text);
-            double newBalance = getBalance() + depositacc;
+            decimal depositacc = decimal.Parse(textBox3.Text);
+            decimal newBalance = getBalance() + depositacc;
             //Update Balance to DB
             //把新的余额的值写入数据库
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double withdrawacc = System.Convert.ToDouble(textBox2.Text);
-            double newBalance = getBalance() - withdrawacc;
+            decimal withdrawacc = decimal.Parse(textBox2.Text);
+            decimal newBalance = getBalance() - withdrawacc;
             //Update Balance to DB
             //把新的余额的值写入数据库
         }
