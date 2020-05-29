@@ -51,8 +51,12 @@ namespace Bank
 
         private void button5_Click(object sender, EventArgs e)
         {
+
+            
+
             ForeignExchange foreignExchange = new ForeignExchange();
             foreignExchange.Show();
+
             this.Hide();
         }
 
