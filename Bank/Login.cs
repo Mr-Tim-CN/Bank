@@ -50,7 +50,7 @@ namespace Bank
 
                 if (rd.Read())
                 {
-                    var savedpasswd = rd.GetTextReader(2).ReadToEnd();
+                    var savedpasswd = rd["密码"].ToString();
                     if (BCrypt.Net.BCrypt.Verify( password, savedpasswd)) {
                         MessageBox.Show("登录成功！");
                         UserCenter insert = new UserCenter();
