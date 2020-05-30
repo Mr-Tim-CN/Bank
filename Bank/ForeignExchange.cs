@@ -153,7 +153,7 @@ namespace Bank
                             ForeignExchange insert = new ForeignExchange();
                             insert.Show();
                             this.Close();
-                            //返回上一界面
+                            //更新界面
                         }
 
                         //更新数据库(减少该种货币量以及增加人民币储蓄)
@@ -229,7 +229,7 @@ namespace Bank
                             ForeignExchange insert = new ForeignExchange();
                             insert.Show();
                             this.Close();
-                            //返回上一界面
+                            //更新此界面
                         }
                         
 
