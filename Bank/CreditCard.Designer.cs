@@ -63,18 +63,18 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label4.Location = new System.Drawing.Point(398, 122);
+            this.label4.Location = new System.Drawing.Point(37, 122);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 31);
             this.label4.TabIndex = 18;
-            this.label4.Text = "可用额度：";
+            this.label4.Text = "已用额度：";
             // 
             // UsedCrdTBox
             // 
             this.UsedCrdTBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UsedCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
-            this.UsedCrdTBox.Location = new System.Drawing.Point(179, 123);
+            this.UsedCrdTBox.Location = new System.Drawing.Point(179, 122);
             this.UsedCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsedCrdTBox.Name = "UsedCrdTBox";
             this.UsedCrdTBox.ReadOnly = true;
@@ -103,12 +103,12 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label5.Location = new System.Drawing.Point(37, 122);
+            this.label5.Location = new System.Drawing.Point(398, 122);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 31);
             this.label5.TabIndex = 15;
-            this.label5.Text = "已用额度：";
+            this.label5.Text = "可用额度：";
             // 
             // label1
             // 
