@@ -48,7 +48,7 @@
             // 
             this.UsableCrdTBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UsableCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
-            this.UsableCrdTBox.Location = new System.Drawing.Point(225, 257);
+            this.UsableCrdTBox.Location = new System.Drawing.Point(540, 122);
             this.UsableCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsableCrdTBox.Name = "UsableCrdTBox";
             this.UsableCrdTBox.ReadOnly = true;
@@ -63,8 +63,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(83, 191);
+            this.label4.Location = new System.Drawing.Point(37, 122);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 31);
@@ -75,7 +74,7 @@
             // 
             this.UsedCrdTBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.UsedCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
-            this.UsedCrdTBox.Location = new System.Drawing.Point(225, 192);
+            this.UsedCrdTBox.Location = new System.Drawing.Point(179, 122);
             this.UsedCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.UsedCrdTBox.Name = "UsedCrdTBox";
             this.UsedCrdTBox.ReadOnly = true;
@@ -89,7 +88,7 @@
             // 
             this.DefaultCrdTBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.DefaultCrdTBox.Cursor = System.Windows.Forms.Cursors.No;
-            this.DefaultCrdTBox.Location = new System.Drawing.Point(225, 122);
+            this.DefaultCrdTBox.Location = new System.Drawing.Point(540, 46);
             this.DefaultCrdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.DefaultCrdTBox.Name = "DefaultCrdTBox";
             this.DefaultCrdTBox.ReadOnly = true;
@@ -104,8 +103,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(83, 256);
+            this.label5.Location = new System.Drawing.Point(398, 122);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 31);
@@ -117,8 +115,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(35, 122);
+            this.label1.Location = new System.Drawing.Point(350, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(182, 31);
@@ -128,7 +125,7 @@
             // DrawTbox
             // 
             this.DrawTbox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.DrawTbox.Location = new System.Drawing.Point(225, 343);
+            this.DrawTbox.Location = new System.Drawing.Point(287, 204);
             this.DrawTbox.Margin = new System.Windows.Forms.Padding(4);
             this.DrawTbox.Name = "DrawTbox";
             this.DrawTbox.Size = new System.Drawing.Size(148, 35);
@@ -139,24 +136,18 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label2.Location = new System.Drawing.Point(83, 342);
+            this.label2.Location = new System.Drawing.Point(87, 205);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 31);
+            this.label2.Size = new System.Drawing.Size(110, 31);
             this.label2.TabIndex = 20;
-            this.label2.Text = "支取金额：";
+            this.label2.Text = "支取金额";
             // 
             // PayBtn
             // 
             this.PayBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.PayBtn.BackgroundImage = global::Bank.Properties.Resources.图片1;
-            this.PayBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PayBtn.FlatAppearance.BorderSize = 0;
-            this.PayBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PayBtn.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.PayBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.PayBtn.Location = new System.Drawing.Point(436, 414);
+            this.PayBtn.Location = new System.Drawing.Point(519, 275);
             this.PayBtn.Margin = new System.Windows.Forms.Padding(4);
             this.PayBtn.Name = "PayBtn";
             this.PayBtn.Size = new System.Drawing.Size(138, 42);
@@ -168,13 +159,8 @@
             // DrawBtn
             // 
             this.DrawBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.DrawBtn.BackgroundImage = global::Bank.Properties.Resources.图片1;
-            this.DrawBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.DrawBtn.FlatAppearance.BorderSize = 0;
-            this.DrawBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DrawBtn.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.DrawBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.DrawBtn.Location = new System.Drawing.Point(436, 343);
+            this.DrawBtn.Location = new System.Drawing.Point(519, 199);
             this.DrawBtn.Margin = new System.Windows.Forms.Padding(4);
             this.DrawBtn.Name = "DrawBtn";
             this.DrawBtn.Size = new System.Drawing.Size(138, 42);
@@ -186,7 +172,7 @@
             // PayTBox
             // 
             this.PayTBox.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.PayTBox.Location = new System.Drawing.Point(225, 414);
+            this.PayTBox.Location = new System.Drawing.Point(287, 279);
             this.PayTBox.Margin = new System.Windows.Forms.Padding(4);
             this.PayTBox.Name = "PayTBox";
             this.PayTBox.Size = new System.Drawing.Size(148, 35);
@@ -197,23 +183,21 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(35, 418);
+            this.label3.Location = new System.Drawing.Point(65, 280);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 31);
+            this.label3.Size = new System.Drawing.Size(158, 31);
             this.label3.TabIndex = 23;
-            this.label3.Text = "从储蓄卡还款：";
+            this.label3.Text = "从储蓄卡还款";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("楷体", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label6.Font = new System.Drawing.Font("楷体", 25F);
             this.label6.Location = new System.Drawing.Point(65, 46);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(245, 37);
+            this.label6.Size = new System.Drawing.Size(219, 34);
             this.label6.TabIndex = 26;
             this.label6.Text = "你好，$姓名$";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -222,8 +206,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(722, 493);
+            this.ClientSize = new System.Drawing.Size(722, 356);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.DrawBtn);
             this.Controls.Add(this.PayTBox);
