@@ -56,7 +56,7 @@
             this.currencyChoose.Location = new System.Drawing.Point(35, 37);
             this.currencyChoose.Margin = new System.Windows.Forms.Padding(4);
             this.currencyChoose.Name = "currencyChoose";
-            this.currencyChoose.Size = new System.Drawing.Size(176, 32);
+            this.currencyChoose.Size = new System.Drawing.Size(176, 38);
             this.currencyChoose.TabIndex = 0;
             this.currencyChoose.Text = "选择一个币种";
             this.currencyChoose.SelectedIndexChanged += new System.EventHandler(this.currencyChoose_SelectedIndexChanged);
@@ -69,7 +69,7 @@
             this.label2.Location = new System.Drawing.Point(232, 36);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 31);
+            this.label2.Size = new System.Drawing.Size(107, 39);
             this.label2.TabIndex = 2;
             this.label2.Text = "持有量";
             // 
@@ -80,7 +80,7 @@
             this.holdExc.Margin = new System.Windows.Forms.Padding(4);
             this.holdExc.Name = "holdExc";
             this.holdExc.ReadOnly = true;
-            this.holdExc.Size = new System.Drawing.Size(148, 35);
+            this.holdExc.Size = new System.Drawing.Size(148, 42);
             this.holdExc.TabIndex = 7;
             this.holdExc.TabStop = false;
             this.holdExc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -93,7 +93,7 @@
             this.excToRmbBtn.Location = new System.Drawing.Point(198, 166);
             this.excToRmbBtn.Margin = new System.Windows.Forms.Padding(4);
             this.excToRmbBtn.Name = "excToRmbBtn";
-            this.excToRmbBtn.Size = new System.Drawing.Size(104, 35);
+            this.excToRmbBtn.Size = new System.Drawing.Size(128, 43);
             this.excToRmbBtn.TabIndex = 2;
             this.excToRmbBtn.TabStop = true;
             this.excToRmbBtn.Text = "结汇：";
@@ -107,7 +107,7 @@
             this.rmbToExcBtn.Location = new System.Drawing.Point(198, 100);
             this.rmbToExcBtn.Margin = new System.Windows.Forms.Padding(4);
             this.rmbToExcBtn.Name = "rmbToExcBtn";
-            this.rmbToExcBtn.Size = new System.Drawing.Size(104, 35);
+            this.rmbToExcBtn.Size = new System.Drawing.Size(128, 43);
             this.rmbToExcBtn.TabIndex = 1;
             this.rmbToExcBtn.TabStop = true;
             this.rmbToExcBtn.Text = "购汇：";
@@ -118,7 +118,7 @@
             this.excNum.Location = new System.Drawing.Point(336, 249);
             this.excNum.Margin = new System.Windows.Forms.Padding(4);
             this.excNum.Name = "excNum";
-            this.excNum.Size = new System.Drawing.Size(148, 35);
+            this.excNum.Size = new System.Drawing.Size(148, 42);
             this.excNum.TabIndex = 3;
             // 
             // label3
@@ -129,7 +129,7 @@
             this.label3.Location = new System.Drawing.Point(29, 248);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(278, 31);
+            this.label3.Size = new System.Drawing.Size(347, 39);
             this.label3.TabIndex = 7;
             this.label3.Text = "兑换数量（等额人民币）";
             // 
@@ -158,7 +158,7 @@
             this.label1.Location = new System.Drawing.Point(304, 102);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 31);
+            this.label1.Size = new System.Drawing.Size(107, 39);
             this.label1.TabIndex = 9;
             this.label1.Text = "买入价";
             // 
@@ -170,7 +170,7 @@
             this.label4.Location = new System.Drawing.Point(304, 168);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 31);
+            this.label4.Size = new System.Drawing.Size(107, 39);
             this.label4.TabIndex = 10;
             this.label4.Text = "卖出价";
             // 
@@ -181,7 +181,7 @@
             this.buyPrice.Location = new System.Drawing.Point(402, 102);
             this.buyPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.buyPrice.Name = "buyPrice";
-            this.buyPrice.Size = new System.Drawing.Size(21, 31);
+            this.buyPrice.Size = new System.Drawing.Size(26, 39);
             this.buyPrice.TabIndex = 11;
             this.buyPrice.Text = " ";
             // 
@@ -192,7 +192,7 @@
             this.sellPrice.Location = new System.Drawing.Point(402, 168);
             this.sellPrice.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.sellPrice.Name = "sellPrice";
-            this.sellPrice.Size = new System.Drawing.Size(21, 31);
+            this.sellPrice.Size = new System.Drawing.Size(26, 39);
             this.sellPrice.TabIndex = 12;
             this.sellPrice.Text = " ";
             // 
@@ -204,16 +204,16 @@
             this.label5.Location = new System.Drawing.Point(47, 133);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 31);
+            this.label5.Size = new System.Drawing.Size(137, 39);
             this.label5.TabIndex = 13;
             this.label5.Text = "兑换方向";
             // 
             // ForeignExchange
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(515, 396);
+            this.ClientSize = new System.Drawing.Size(522, 396);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.sellPrice);
             this.Controls.Add(this.buyPrice);
