@@ -20,13 +20,13 @@ namespace Bank
         public DebitCard()
         {
             InitializeComponent();
-            debit = this;
+
             label1.Text = "你好，" + Login.Getname();
             textBox1.Text = getBalance().ToString();
         }
 
-        double Balance;
-        public double getBalance()
+        decimal Balance;
+        public decimal getBalance()
         {
             string sql1 = "Select * from debitcardinfo where 手机号='" + phonenumber + "'";
             DB.MySqlDataBase mdb = new DB.MySqlDataBase();
@@ -75,8 +75,6 @@ namespace Bank
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
-
             try
             {
                 double withdrawacc = System.Convert.ToDouble(textBox3.Text);
@@ -112,7 +110,6 @@ namespace Bank
             {
                 MessageBox.Show("请输入取款金额");
             }
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -152,9 +149,5 @@ namespace Bank
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            textBox1.Text = getBalance().ToString();
-        }
     }
 }
