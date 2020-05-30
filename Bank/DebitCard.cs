@@ -15,6 +15,8 @@ namespace Bank
         public DebitCard()
         {
             InitializeComponent();
+            textBox1.Text = getBalance().ToString();
+            label1.Text = "你好，" + Login.Getname();
         }
 
         decimal Balance;
@@ -56,9 +58,5 @@ namespace Bank
             //把新的余额的值写入数据库
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            textBox1.Text = getBalance().ToString();
-        }
     }
 }
