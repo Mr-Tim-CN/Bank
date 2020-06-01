@@ -207,5 +207,8 @@
   <ItemGroup>
     <None Include="pic\bank.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图片1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

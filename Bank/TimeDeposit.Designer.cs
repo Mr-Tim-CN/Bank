@@ -38,21 +38,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // planChoose
             // 
             this.planChoose.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.planChoose.BackColor = System.Drawing.SystemColors.Window;
             this.planChoose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.planChoose.Font = new System.Drawing.Font("Trebuchet MS", 18F);
+            this.planChoose.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.planChoose.FormattingEnabled = true;
-            this.planChoose.ItemHeight = 24;
+            this.planChoose.ItemHeight = 29;
             this.planChoose.Items.AddRange(new object[] {
             "3个月/年利率1.4%",
             "6个月/年利率1.65%",
@@ -60,27 +63,29 @@
             "2年/年利率2.4%",
             "3年/年利率3%",
             "5年/年利率3%"});
-            this.planChoose.Location = new System.Drawing.Point(378, 384);
+            this.planChoose.Location = new System.Drawing.Point(603, 373);
             this.planChoose.Margin = new System.Windows.Forms.Padding(4);
             this.planChoose.Name = "planChoose";
-            this.planChoose.Size = new System.Drawing.Size(218, 148);
+            this.planChoose.Size = new System.Drawing.Size(218, 120);
             this.planChoose.TabIndex = 0;
             // 
             // buyNum
             // 
             this.buyNum.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buyNum.Location = new System.Drawing.Point(718, 384);
+            this.buyNum.Location = new System.Drawing.Point(890, 373);
             this.buyNum.Margin = new System.Windows.Forms.Padding(4);
             this.buyNum.Name = "buyNum";
-            this.buyNum.Size = new System.Drawing.Size(148, 35);
+            this.buyNum.Size = new System.Drawing.Size(159, 35);
             this.buyNum.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label1.Location = new System.Drawing.Point(738, 312);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(911, 312);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 31);
@@ -90,23 +95,30 @@
             // buyBtn
             // 
             this.buyBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.buyBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buyBtn.BackColor = System.Drawing.Color.Transparent;
+            this.buyBtn.BackgroundImage = global::Bank.Properties.Resources.图片1;
+            this.buyBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buyBtn.FlatAppearance.BorderSize = 0;
+            this.buyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buyBtn.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.buyBtn.Location = new System.Drawing.Point(753, 459);
+            this.buyBtn.ForeColor = System.Drawing.Color.Teal;
+            this.buyBtn.Location = new System.Drawing.Point(901, 452);
             this.buyBtn.Margin = new System.Windows.Forms.Padding(4);
             this.buyBtn.Name = "buyBtn";
-            this.buyBtn.Size = new System.Drawing.Size(80, 80);
+            this.buyBtn.Size = new System.Drawing.Size(138, 54);
             this.buyBtn.TabIndex = 2;
             this.buyBtn.Text = "确认购买";
-            this.buyBtn.UseVisualStyleBackColor = true;
+            this.buyBtn.UseVisualStyleBackColor = false;
             this.buyBtn.Click += new System.EventHandler(this.buyBtn_Click);
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label2.Location = new System.Drawing.Point(89, 409);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(378, 312);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 31);
@@ -117,7 +129,7 @@
             // 
             this.cardBalance.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cardBalance.Cursor = System.Windows.Forms.Cursors.No;
-            this.cardBalance.Location = new System.Drawing.Point(84, 471);
+            this.cardBalance.Location = new System.Drawing.Point(373, 373);
             this.cardBalance.Margin = new System.Windows.Forms.Padding(4);
             this.cardBalance.Name = "cardBalance";
             this.cardBalance.ReadOnly = true;
@@ -130,8 +142,10 @@
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 18F);
-            this.label3.Location = new System.Drawing.Point(432, 312);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(648, 312);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 31);
@@ -142,8 +156,10 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("楷体", 25F);
-            this.label4.Location = new System.Drawing.Point(33, 110);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label4.Location = new System.Drawing.Point(62, 113);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(253, 34);
@@ -157,13 +173,14 @@
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Desktop;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(324, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(373, 31);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
@@ -174,30 +191,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(610, 186);
             this.dataGridView1.StandardTab = true;
             this.dataGridView1.TabIndex = 3;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("楷体", 25F);
-            this.label6.Location = new System.Drawing.Point(49, 322);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(219, 34);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "新增定期存款";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(-155, 230);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1354, 24);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "_________________________________________________________________________________" +
-    "_______________________________";
             // 
             // Column1
             // 
@@ -239,11 +232,38 @@
             this.Column4.ReadOnly = true;
             this.Column4.Width = 131;
             // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("楷体", 25F);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label6.Location = new System.Drawing.Point(62, 390);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(253, 34);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "新增的定期存款";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(-106, 230);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(1354, 24);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "_________________________________________________________________________________" +
+    "_______________________________";
+            // 
             // TimeDeposit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 578);
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1072, 578);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView1);
