@@ -82,7 +82,8 @@ namespace Bank
                 double withdrawacc = System.Convert.ToDouble(textBox3.Text);
                 if(withdrawacc <= 0)
                 {
-                    MessageBox.Show("取款金额应为正整数！");
+                    MessageBox.Show("取款金额应大于0！");
+                    textBox3.Text = "";
                 }
                 else if(withdrawacc > getBalance())
                 {
@@ -123,7 +124,8 @@ namespace Bank
                 double depositacc = System.Convert.ToDouble(textBox2.Text);
                 if(depositacc <= 0)
                 {
-                    MessageBox.Show("存款金额应为正整数！");
+                    MessageBox.Show("存款金额应大于0！");
+                    textBox2.Text = "";
                 }
                 else
                 {

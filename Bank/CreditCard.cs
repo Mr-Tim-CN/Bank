@@ -112,6 +112,13 @@ namespace Bank
                 {
                     MessageBox.Show("储蓄卡余额不足");
                 }
+
+                else if(pay <= 0)
+                {
+                    MessageBox.Show("还款金额应大于0！");
+                    PayTBox.Text = "";
+                }
+
                 else
                 {
                     if (pay <= getUsed())
@@ -153,7 +160,14 @@ namespace Bank
             try
             {
                 double draw = System.Convert.ToDouble(DrawTbox.Text);
-                if (draw <= getUsable())
+
+                if(draw <= 0)
+                {
+                    MessageBox.Show("支取金额应大于0！");
+                    DrawTbox.Text = "";
+                }
+
+                else if (draw <= getUsable())
                 {
                     UsedCrdTBox.Text = (getUsed() + draw).ToString();   // Update "已用额度" text
                     UsableCrdTBox.Text = (getUsable() - draw).ToString();   // Update "可用额度" text

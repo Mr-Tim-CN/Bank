@@ -132,6 +132,13 @@ namespace Bank
                     {
                         MessageBox.Show("您拥有的货币量不足");
                     }
+
+                    else if(exc_excToRmb <= 0)
+                    {
+                        MessageBox.Show("兑换数量应大于0！");
+                        excNum.Text = "";
+                    }
+
                     else
                     {
                         //更新数据库(减少该种货币量以及增加人民币储蓄)
@@ -166,7 +173,7 @@ namespace Bank
                 }
                 catch
                 {
-                    MessageBox.Show("请输入数字");
+                    MessageBox.Show("请输入兑换金额");
                 }
                 
             }
@@ -206,6 +213,13 @@ namespace Bank
                     {
                         MessageBox.Show("您的人民币储蓄不足");
                     }
+
+                    else if(rmbToExc <= 0)
+                    {
+                        MessageBox.Show("兑换数量应大于0！");
+                        excNum.Text = "";
+                    }
+
                     else
                     {
                         //更新数据库(减少人民币储蓄以及增加该种货币量)（币种：excKey）
@@ -239,7 +253,7 @@ namespace Bank
                 }
                 catch
                 {
-                    MessageBox.Show("请输入数字");
+                    MessageBox.Show("请输入兑换金额");
                 }
 
                
