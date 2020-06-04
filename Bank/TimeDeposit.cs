@@ -107,6 +107,13 @@ namespace Bank
                     {
                         MessageBox.Show("您的可用余额不足");
                     }
+
+                    else if(buyPlan <= 0)
+                    {
+                        MessageBox.Show("购买金额应大于0！");
+                        buyNum.Text = "";
+                    }
+
                     else if (plan == "3个月/年利率1.4%")
                     {
                         endtime = DateTime.Now.AddMonths(3); //3个月后的日期
