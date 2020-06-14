@@ -47,13 +47,12 @@ namespace Bank
             {
                 UserCenter.user.Show();
                 this.Close();
-                
+
                 return;
             }
             base.WndProc(ref m);
         }
 
-        
         private void button3_Click(object sender, EventArgs e)
         {
             TimeDeposit insert = new TimeDeposit();
@@ -61,10 +60,7 @@ namespace Bank
             this.Hide();
         }
 
-        public void updateBalance()
-        {
-            textBox1.Text = getBalance().ToString();
-        }
+
 
         private void button5_Click(object sender, EventArgs e)
         {

@@ -17,9 +17,8 @@ namespace Bank
     {
         //int nowExc = 0;
         double nowExc;
-        
+        double sellprice1, buyprice1;
         string phonenumber = Login.Getphonenum();
-      
         public ForeignExchange()
         {
             InitializeComponent();
@@ -32,9 +31,7 @@ namespace Bank
 
             if (m.Msg == WM_SYSCOMMAND && ((int)m.WParam == SC_CLOSE))
             {
-                DebitCard.debit.Controls["textBox1"].Text = nowExc.ToString();
                 DebitCard.debit.Show();
-                
                 this.Close();
 
                 return;
@@ -266,7 +263,6 @@ namespace Bank
             {
                 MessageBox.Show("请选择交易类型");
             }
-            
         }
     }
 }
