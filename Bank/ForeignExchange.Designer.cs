@@ -234,9 +234,11 @@
             // 
             // textBox1
             // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.textBox1.Location = new System.Drawing.Point(336, 296);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(148, 35);
             this.textBox1.TabIndex = 15;
             // 
