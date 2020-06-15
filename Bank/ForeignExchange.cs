@@ -43,6 +43,7 @@ namespace Bank
         }
         private void currencyChoose_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             double sellprice2, buyprice2;
             String excKey = currencyChoose.Text;
             string url = @"https://www.boc.cn/sourcedb/whpj/";
@@ -96,6 +97,7 @@ namespace Bank
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             if(excToRmbBtn.Checked)
             {
                 double excToRmb;
@@ -103,7 +105,7 @@ namespace Bank
                 {
                     excToRmb = double.Parse(excNum.Text);
                     double sellprice3 = double.Parse(sellPrice.Text);
-                    double exc_excToRmb = (excToRmb / sellprice3) * 100;
+                    //double exc_excToRmb = (excToRmb / sellprice3) * 100;
                     //因为用户输入的是人民币，这里把人民币换成对应货币在比较是否会发生"您拥有的货币量不足"
 
                     string excKey = currencyChoose.Text;
@@ -131,12 +133,12 @@ namespace Bank
                     rd.Close();                             //关闭连接
                     rd2.Close();
 
-                    if (exc_excToRmb > nowExc)
+                    if (excToRmb > nowExc)
                     {
                         MessageBox.Show("您拥有的货币量不足");
                     }
 
-                    else if(exc_excToRmb <= 0)
+                    else if(excToRmb <= 0)
                     {
                         MessageBox.Show("兑换数量应大于0！");
                         excNum.Text = "";
@@ -150,8 +152,8 @@ namespace Bank
                         double newexc, newrmb;   //兑换后的外币和人民币
                         //double sellprice3 = double.Parse(sellPrice.Text);
                         //计算公式 
-                        newexc = nowExc - (excToRmb / sellprice3) * 100;
-                        newrmb = nowrmb + excToRmb;
+                        newexc = nowExc - excToRmb;
+                        newrmb = nowrmb + double.Parse(textBox1.Text);
                         string sql3 = "UPDATE debitcardinfo SET 活期存款余额 = '" + newrmb + "' where 手机号='" + phonenumber + "'";
                         string sql4 = "UPDATE foreignexchange SET 货币持有量 = '" + newexc + "' where 手机号='" + phonenumber + "'AND 货币种类='" + excKey + "'";
                         DB.MySqlDataBase db3 = new DB.MySqlDataBase();
@@ -176,7 +178,11 @@ namespace Bank
                 }
                 catch
                 {
-                    MessageBox.Show("请输入兑换金额");
+                    if (currencyChoose.Text == "选择一个币种")
+                    {
+                        MessageBox.Show("未选择交易币种");
+                    }
+                    else MessageBox.Show("请输入兑换金额");
                 }
                 
             }
@@ -186,7 +192,7 @@ namespace Bank
                 double rmbToExc;
                 try
                 {
-                    rmbToExc = double.Parse(excNum.Text);
+                    rmbToExc = double.Parse(textBox1.Text);
 
                     //int rmbToExc = int.Parse(excNum.Text);
                     string excKey = currencyChoose.Text;
@@ -231,8 +237,8 @@ namespace Bank
                         double newexc, newrmb;   //兑换后的外币和人民币 
                         double buyprice4 = double.Parse(buyPrice.Text);
                         //计算公式
-                        newexc = nowExc + (rmbToExc / buyprice4) * 100;
-                        newrmb = nowrmb - rmbToExc;
+                        newexc = nowExc + double.Parse(excNum.Text);
+                        newrmb = nowrmb - double.Parse(textBox1.Text);
                         string sql3 = "UPDATE debitcardinfo SET 活期存款余额 = '" + newrmb + "' where 手机号='" + phonenumber + "'";
                         string sql4 = "UPDATE foreignexchange SET 货币持有量 = '" + newexc + "' where 手机号='" + phonenumber + "'AND 货币种类='" + excKey + "'";
                         //更新数据库(减少人民币储蓄以及增加该种货币量)（币种：excKey）
@@ -256,7 +262,11 @@ namespace Bank
                 }
                 catch
                 {
-                    MessageBox.Show("请输入兑换金额");
+                    if (currencyChoose.Text == "选择一个币种")
+                    {
+                        MessageBox.Show("未选择交易币种");
+                    }
+                    else MessageBox.Show("请输入兑换金额");
                 }
 
                
@@ -267,6 +277,50 @@ namespace Bank
                 MessageBox.Show("请选择交易类型");
             }
             
+        }
+
+        private void rmbToExcBtn_CheckedChanged(object sender, EventArgs e)
+        {
+            label3.Text = "买入数量";
+            
+        }
+
+        private void excToRmbBtn_CheckedChanged(object sender, EventArgs e)
+        {
+            label3.Text = "卖出数量";
+        }
+
+        private void excNum_TextChanged(object sender, EventArgs e)
+        {
+            if (excNum.Text != "")
+            {
+                if (rmbToExcBtn.Checked)
+                {
+                    try
+                    {
+                        double exc = double.Parse(excNum.Text);
+                        double buy = double.Parse(buyPrice.Text);
+                        textBox1.Text = (exc / 100 * buy).ToString();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("请输入数字");
+                    }
+                }
+                else if (excToRmbBtn.Checked)
+                {
+                    try
+                    {
+                        double exc = double.Parse(excNum.Text);
+                        double sale = double.Parse(sellPrice.Text);
+                        textBox1.Text = (exc / 100 * sale).ToString();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("请输入数字");
+                    }
+                }
+            }
         }
     }
 }

@@ -102,6 +102,7 @@
             this.excToRmbBtn.TabStop = true;
             this.excToRmbBtn.Text = "结汇：";
             this.excToRmbBtn.UseVisualStyleBackColor = false;
+            this.excToRmbBtn.CheckedChanged += new System.EventHandler(this.excToRmbBtn_CheckedChanged);
             // 
             // rmbToExcBtn
             // 
@@ -117,6 +118,7 @@
             this.rmbToExcBtn.TabStop = true;
             this.rmbToExcBtn.Text = "购汇：";
             this.rmbToExcBtn.UseVisualStyleBackColor = false;
+            this.rmbToExcBtn.CheckedChanged += new System.EventHandler(this.rmbToExcBtn_CheckedChanged);
             // 
             // excNum
             // 
@@ -125,6 +127,7 @@
             this.excNum.Name = "excNum";
             this.excNum.Size = new System.Drawing.Size(148, 35);
             this.excNum.TabIndex = 3;
+            this.excNum.TextChanged += new System.EventHandler(this.excNum_TextChanged);
             // 
             // label3
             // 
@@ -132,12 +135,13 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 18F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(70, 248);
+            this.label3.Location = new System.Drawing.Point(101, 248);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 31);
+            this.label3.Size = new System.Drawing.Size(110, 31);
             this.label3.TabIndex = 7;
-            this.label3.Text = "买入/卖出数量";
+            this.label3.Text = "买入数量";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
             // 
