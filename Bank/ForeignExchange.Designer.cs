@@ -44,10 +44,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // currencyChoose
             // 
+            this.currencyChoose.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.currencyChoose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.currencyChoose.ForeColor = System.Drawing.SystemColors.GrayText;
             this.currencyChoose.FormattingEnabled = true;
             this.currencyChoose.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -55,12 +58,11 @@
             "美元",
             "日元",
             "港币"});
-            this.currencyChoose.Location = new System.Drawing.Point(35, 37);
+            this.currencyChoose.Location = new System.Drawing.Point(109, 36);
             this.currencyChoose.Margin = new System.Windows.Forms.Padding(4);
             this.currencyChoose.Name = "currencyChoose";
-            this.currencyChoose.Size = new System.Drawing.Size(176, 32);
+            this.currencyChoose.Size = new System.Drawing.Size(103, 32);
             this.currencyChoose.TabIndex = 0;
-            this.currencyChoose.Text = "选择一个币种";
             this.currencyChoose.SelectedIndexChanged += new System.EventHandler(this.currencyChoose_SelectedIndexChanged);
             // 
             // label2
@@ -69,7 +71,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 18F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(232, 36);
+            this.label2.Location = new System.Drawing.Point(243, 36);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 31);
@@ -79,11 +81,12 @@
             // holdExc
             // 
             this.holdExc.Cursor = System.Windows.Forms.Cursors.No;
-            this.holdExc.Location = new System.Drawing.Point(336, 35);
+            this.holdExc.Enabled = false;
+            this.holdExc.Location = new System.Drawing.Point(347, 36);
             this.holdExc.Margin = new System.Windows.Forms.Padding(4);
             this.holdExc.Name = "holdExc";
             this.holdExc.ReadOnly = true;
-            this.holdExc.Size = new System.Drawing.Size(148, 35);
+            this.holdExc.Size = new System.Drawing.Size(134, 35);
             this.holdExc.TabIndex = 7;
             this.holdExc.TabStop = false;
             this.holdExc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -122,7 +125,7 @@
             // 
             // excNum
             // 
-            this.excNum.Location = new System.Drawing.Point(336, 249);
+            this.excNum.Location = new System.Drawing.Point(308, 240);
             this.excNum.Margin = new System.Windows.Forms.Padding(4);
             this.excNum.Name = "excNum";
             this.excNum.Size = new System.Drawing.Size(148, 35);
@@ -135,12 +138,12 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 18F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(101, 248);
+            this.label3.Location = new System.Drawing.Point(118, 239);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 31);
             this.label3.TabIndex = 7;
-            this.label3.Text = "买入数量";
+            this.label3.Text = "兑换数量";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
@@ -153,7 +156,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 18F);
             this.button1.ForeColor = System.Drawing.Color.Teal;
-            this.button1.Location = new System.Drawing.Point(189, 362);
+            this.button1.Location = new System.Drawing.Point(191, 362);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(140, 46);
@@ -216,7 +219,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("微软雅黑", 18F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(47, 133);
+            this.label5.Location = new System.Drawing.Point(46, 133);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 31);
@@ -229,7 +232,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 18F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(87, 304);
+            this.label6.Location = new System.Drawing.Point(94, 295);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(134, 31);
@@ -239,19 +242,35 @@
             // textBox1
             // 
             this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.textBox1.Location = new System.Drawing.Point(336, 304);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(308, 295);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(148, 35);
             this.textBox1.TabIndex = 15;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(27, 36);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 31);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "币种";
+            // 
             // ForeignExchange
             // 
+            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(522, 431);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -299,5 +318,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -42,7 +42,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("楷体", 25F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(69, 49);
+            this.label1.Location = new System.Drawing.Point(69, 55);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(219, 34);
@@ -51,7 +51,6 @@
             // 
             // button1
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = global::Bank.Properties.Resources.图片1;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -70,7 +69,6 @@
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImage = global::Bank.Properties.Resources.图片1;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -89,7 +87,6 @@
             // 
             // button3
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImage = global::Bank.Properties.Resources.图片1;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -108,7 +105,6 @@
             // 
             // button4
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.BackgroundImage = global::Bank.Properties.Resources.图片1;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -130,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(642, 365);
+            this.ClientSize = new System.Drawing.Size(642, 370);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
