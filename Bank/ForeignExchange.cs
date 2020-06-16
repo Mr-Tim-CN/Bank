@@ -65,11 +65,11 @@ namespace Bank
             Regex rx1 = new Regex(pricePattern);
             Match m1 = rx1.Match(words[count+1]);
             if (m1.Success)
-                buyPrice.Text = m1.Value;
+                sellPrice.Text = m1.Value;
             Regex rx2 = new Regex(pricePattern);
             Match m2 = rx1.Match(words[count + 3]);
             if (m2.Success)
-                sellPrice.Text = m2.Value;
+                buyPrice.Text = m2.Value;
 
             if (excNum.Text != "")
             {
