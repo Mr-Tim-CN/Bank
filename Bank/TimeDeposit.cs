@@ -72,7 +72,6 @@ namespace Bank
 
             if (m.Msg == WM_SYSCOMMAND && ((int)m.WParam == SC_CLOSE))
             {
-                DebitCard.debit.Controls["textBox1"].Text = cardBalance.Text;
                 DebitCard.debit.Show();
                 this.Close();
 

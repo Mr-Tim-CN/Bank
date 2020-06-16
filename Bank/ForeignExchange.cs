@@ -17,9 +17,8 @@ namespace Bank
     {
         //int nowExc = 0;
         double nowExc;
-        
+        //double sellprice1, buyprice1;
         string phonenumber = Login.Getphonenum();
-      
         public ForeignExchange()
         {
             InitializeComponent();
@@ -32,9 +31,7 @@ namespace Bank
 
             if (m.Msg == WM_SYSCOMMAND && ((int)m.WParam == SC_CLOSE))
             {
-                DebitCard.debit.Controls["textBox1"].Text = nowExc.ToString();
                 DebitCard.debit.Show();
-                
                 this.Close();
 
                 return;
@@ -74,6 +71,35 @@ namespace Bank
             if (m2.Success)
                 sellPrice.Text = m2.Value;
 
+            if (excNum.Text != "")
+            {
+                if (rmbToExcBtn.Checked)
+                {
+                    try
+                    {
+                        double exc = double.Parse(excNum.Text);
+                        double buy = double.Parse(buyPrice.Text);
+                        textBox1.Text = (exc / 100 * buy).ToString("0.00");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("请输入数字"); ;
+                    }
+                }
+                else if (excToRmbBtn.Checked)
+                {
+                    try
+                    {
+                        double exc = double.Parse(excNum.Text);
+                        double sale = double.Parse(sellPrice.Text);
+                        textBox1.Text = (exc / 100 * sale).ToString("0.00");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("请输入数字"); ;
+                    }
+                }
+            }
             sellprice2 = double.Parse(sellPrice.Text);
             buyprice2 = double.Parse(buyPrice.Text);
 
@@ -276,18 +302,42 @@ namespace Bank
             {
                 MessageBox.Show("请选择交易类型");
             }
-            
         }
 
         private void rmbToExcBtn_CheckedChanged(object sender, EventArgs e)
         {
             label3.Text = "买入数量";
-            
+            if(excNum.Text != "")
+            {
+                try
+                {
+                    double exc = double.Parse(excNum.Text);
+                    double buy = double.Parse(buyPrice.Text);
+                    textBox1.Text = (exc / 100 * buy).ToString("0.00");
+                }
+                catch
+                {
+                    MessageBox.Show("请输入数字");
+                }
+            }
         }
 
         private void excToRmbBtn_CheckedChanged(object sender, EventArgs e)
         {
             label3.Text = "卖出数量";
+            if(excNum.Text != "")
+            {
+                try
+                {
+                    double exc = double.Parse(excNum.Text);
+                    double sale = double.Parse(sellPrice.Text);
+                    textBox1.Text = (exc / 100 * sale).ToString("0.00");
+                }
+                catch
+                {
+                    MessageBox.Show("请输入数字");
+                }
+            }
         }
 
         private void excNum_TextChanged(object sender, EventArgs e)
@@ -300,7 +350,7 @@ namespace Bank
                     {
                         double exc = double.Parse(excNum.Text);
                         double buy = double.Parse(buyPrice.Text);
-                        textBox1.Text = (exc / 100 * buy).ToString();
+                        textBox1.Text = (exc / 100 * buy).ToString("0.00");
                     }
                     catch
                     {
@@ -313,7 +363,7 @@ namespace Bank
                     {
                         double exc = double.Parse(excNum.Text);
                         double sale = double.Parse(sellPrice.Text);
-                        textBox1.Text = (exc / 100 * sale).ToString();
+                        textBox1.Text = (exc / 100 * sale).ToString("0.00");
                     }
                     catch
                     {
