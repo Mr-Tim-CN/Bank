@@ -31,6 +31,7 @@ namespace Bank
 
             if (m.Msg == WM_SYSCOMMAND && ((int)m.WParam == SC_CLOSE))
             {
+                DebitCard.debit.Controls["textBox1"].Text = nowExc.ToString();
                 DebitCard.debit.Show();
                 this.Close();
 
@@ -204,7 +205,7 @@ namespace Bank
                 }
                 catch
                 {
-                    if (currencyChoose.Text == "选择一个币种")
+                    if (currencyChoose.Text == "")
                     {
                         MessageBox.Show("未选择交易币种");
                     }
@@ -288,7 +289,7 @@ namespace Bank
                 }
                 catch
                 {
-                    if (currencyChoose.Text == "选择一个币种")
+                    if (currencyChoose.Text == "")
                     {
                         MessageBox.Show("未选择交易币种");
                     }
@@ -317,7 +318,11 @@ namespace Bank
                 }
                 catch
                 {
-                    MessageBox.Show("请输入数字");
+                    if (currencyChoose.Text == "")
+                    {
+                        MessageBox.Show("未选择交易币种");
+                    }
+                    else MessageBox.Show("请输入数字");
                 }
             }
         }
@@ -335,7 +340,11 @@ namespace Bank
                 }
                 catch
                 {
-                    MessageBox.Show("请输入数字");
+                    if (currencyChoose.Text == "")
+                    {
+                        MessageBox.Show("未选择交易币种");
+                    }
+                    else MessageBox.Show("请输入数字");
                 }
             }
         }
@@ -354,7 +363,11 @@ namespace Bank
                     }
                     catch
                     {
-                        MessageBox.Show("请输入数字");
+                        if (currencyChoose.Text == "")
+                        {
+                            MessageBox.Show("未选择交易币种");
+                        }
+                        else MessageBox.Show("请输入数字");
                     }
                 }
                 else if (excToRmbBtn.Checked)
@@ -367,10 +380,16 @@ namespace Bank
                     }
                     catch
                     {
-                        MessageBox.Show("请输入数字");
+                        if (currencyChoose.Text == "")
+                        {
+                            MessageBox.Show("未选择交易币种");
+                        }
+                        else MessageBox.Show("请输入数字");
                     }
                 }
             }
+            else
+                textBox1.Text = "";
         }
     }
 }
